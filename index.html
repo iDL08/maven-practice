@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('download.jpg') no-repeat center center/cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        h1 {
+            z-index: 1;
+        }
+        .foreground-image {
+            max-width: 80%;
+            height: auto;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Welcome to Parkavi Prend's websitee</h1>
+    <img src="Media.jpg" alt="Foreground image" class="foreground-image">
+</body>
+</html>
